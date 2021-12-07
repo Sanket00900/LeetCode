@@ -1,0 +1,30 @@
+*Sol 1:-
+
+class Solution {
+    public String toLowerCase(String s) {
+
+// ASCII 97 for a, 122 for z
+// ASCII 65 for A, 90 for Z
+
+StringBuilder result = new StringBuilder();
+for(int i=0; i<s.length(); i++) {
+	int value = (int)(s.charAt(i));
+    if(value > 64 && value < 91) {
+		value = value + 32;
+	}
+    result.append((char)(value));
+}
+    return result.toString();
+    }
+}
+
+
+
+*Sol 2:-
+
+class Solution {
+    public String toLowerCase(String s) {
+        s = s.toLowerCase();
+        return s;
+    }
+}
